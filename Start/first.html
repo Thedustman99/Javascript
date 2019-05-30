@@ -1,0 +1,53 @@
+<script>
+
+    console.log("Hello World");
+
+    // This is a single line comment
+
+    /* Here you have created a
+      multi line
+      comments
+      See */
+
+    /* Data Types are:-
+     * undefined, null, boolean, string, symbol, number and object */
+
+    var myName = "Sorav";
+    var myName = "Sourav"; // You can change it anywhere
+
+    let hisName = "Superman";
+    // let hisName = "Batman"; // You can't change it by writing let at the begining
+
+    //But u can change it by
+    hisName = "Batman";
+
+    const someValue = 12.414;
+    //someValue = 7;    // You can't change this value anywhere
+
+    console.log(myName);
+    console.log(hisName);
+    console.log(someValue);
+
+    //In windows console "var" will be displayed but "let" will be undefined there
+    console.log(window.myName);     // It will run smothly and result will be displayed
+    console.log(window.hisName);    // It will run, but the output will be "undefined"
+    console.log(window.someValue);  // This will be same as "let"
+
+
+    for( let tuce = 0; tuce < 5; tuce++ ) {
+            //tuce is only visible in here (and in the for() parentheses)
+            //and there is a separate tuce variable for each iteration of the loop
+            console.log(tuce);
+        }
+
+    //tuce is *not* visible out here
+    //console.log(tuce);    // Here there will be an error
+
+    for( var nish = 0; nish < 5; nish++ ) {
+            //nish is visible to the whole function
+            console.log(nish);
+        }
+
+    //nish *is* visible out here
+    console.log(nish);      // Here , there will be no error
+</script>
